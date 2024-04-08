@@ -16,5 +16,6 @@ namespace API.Entities
         public int AppUserId { get; set; }
         [ForeignKey("AppUserId")]
         public AppUser AppUser { get; set; }
+        public bool IsApproved { get; set; }
     }
 }
